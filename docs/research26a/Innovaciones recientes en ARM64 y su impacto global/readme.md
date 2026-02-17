@@ -11,6 +11,19 @@ Los procesadores **RISC** dan prioridad a un conjunto más pequeño de instrucci
 
 Esto los hace ideales para dispositivos móviles como **teléfonos inteligentes y tabletas**, donde la duración de la batería y la portabilidad son fundamentales.
 
+---
+
+## 📊 Comparación RISC vs CISC
+
+| Característica | RISC (ARM) | CISC (x86) |
+|---------------|------------|------------|
+| Número de instrucciones | Reducido | Amplio |
+| Complejidad por instrucción | Simple | Compleja |
+| Consumo energético | Bajo | Mayor |
+| Tamaño del chip | Menor | Mayor |
+
+---
+
 La arquitectura ARM abarca una amplia familia de conjuntos de instrucciones, con variaciones que se adaptan a diferentes requisitos de rendimiento y potencia. Tradicionalmente, los procesadores ARM funcionaban en modo de **32 bits**, lo que limitaba:
 
 - La cantidad de memoria accesible  
@@ -20,6 +33,18 @@ Aquí es donde entra en escena **ARM64**.
 
 ---
 
+## 🧠 Evolución hacia ARM64
+
+```mermaid
+flowchart LR
+    A[ARM 32 bits<br>Armv7] --> B[Limitaciones<br>Memoria y Datos]
+    B --> C[Armv8-A]
+    C --> D[ARM64 / AArch64]
+    D --> E[Mayor memoria]
+    D --> F[Mayor rendimiento]
+    D --> G[Mejor seguridad]
+```
+
 ## El auge de ARM64: La informática de 64 bits
 
 Introducido en 2011 con la arquitectura **Armv8-A**, ARM64 representa el estado de ejecución de **64 bits** dentro de la familia ARM.
@@ -28,6 +53,13 @@ Este cambio supuso un importante salto adelante que permitió a los procesadores
 
 ### 📌 Direccionamiento de más memoria
 Con el direccionamiento de 64 bits, los procesadores ARM64 pueden manejar cantidades de memoria significativamente mayores en comparación con los de 32 bits.  
+
+```mermaid
+graph TD
+    A[32 bits] -->|Límite| B[4 GB RAM]
+    C[64 bits] -->|Expansión| D[16 Exabytes RAM]
+```
+
 Esto permite:
 
 - Multitarea más fluida  
@@ -69,7 +101,15 @@ La eficiencia y escalabilidad de ARM64 lo hacen atractivo para:
 
 - Computación en la nube  
 - Centros de datos  
-- Entornos donde el consumo energético es crítico  
+- Entornos donde el consumo energético es crítico
+
+```mermaid
+flowchart TB
+    Usuario --> Nube
+    Nube --> ServidorARM[Servidor ARM64]
+    ServidorARM --> BaseDatos
+    ServidorARM --> Aplicaciones
+```
 
 ### 🌐 Internet de las cosas (IoT)
 Gracias a sus bajos requisitos energéticos, ARM64 es ideal para:
@@ -108,6 +148,13 @@ La arquitectura AArch64 puede ampliarse con conjuntos de instrucciones opcionale
 - **NEON** (operaciones SIMD — instrucción única, múltiples datos)  
 - **SVE (Scalable Vector Extensions)** para cargas de trabajo intensivas  
 
+```mermaid
+flowchart LR
+    A[ARM64 Base] --> B[NEON SIMD]
+    A --> C[SVE]
+    C --> D[Alto rendimiento HPC]
+```
+
 Estas extensiones mejoran el rendimiento en tareas de alto procesamiento.
 ---
 
@@ -136,6 +183,12 @@ Ventajas:
 
 Las técnicas de emulación permiten ejecutar aplicaciones **x86-64** en procesadores ARM64.
 
+```mermaid
+flowchart TD
+    A[Aplicación x86-64] --> B[Emulación]
+    B --> C[Procesador ARM64]
+```
+
 - Facilitan la compatibilidad de software.
 - Pueden introducir sobrecarga de rendimiento.
 - Actúan como solución de transición mientras crece el desarrollo nativo.
@@ -156,6 +209,12 @@ Esto permite:
 El futuro de ARM64 presenta un panorama sólido debido a diversos factores estratégicos y tecnológicos.
 
 ## 📈 Mejoras en el rendimiento
+
+```mermaid
+graph LR
+    Innovacion --> Rendimiento
+    Rendimiento --> Competitividad
+```
 
 Los diseñadores de chips ARM continúan innovando, incrementando el rendimiento sin sacrificar eficiencia energética.
 
