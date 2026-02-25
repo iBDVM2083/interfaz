@@ -10,9 +10,11 @@
 
 # Introducción 
 
-El crecimiento acelerado de la inteligencia artificial, la computación en la nube y el procesamiento masivo de datos ha incrementado la demanda de sistemas de alto rendimiento. Sin embargo, este aumento de capacidad computacional también implica un mayor consumo energético.
+El crecimiento acelerado de la inteligencia artificial, la computación en la nube y el procesamiento masivo de datos ha incrementado la demanda de sistemas de alto rendimiento. Sin embargo, este aumento de capacidad computacional también implica un mayor consumo energético y mayores costos operativos en infraestructura tecnológica.
 
-En este contexto, la arquitectura ARM ha ganado relevancia no solo en dispositivos móviles, sino también en aplicaciones de alto rendimiento donde se requiere maximizar el desempeño sin elevar significativamente el consumo de energía. Su enfoque en eficiencia por watt la convierte en una alternativa estratégica frente a arquitecturas tradicionales.
+En este contexto, la arquitectura ARM ha ganado relevancia no solo en dispositivos móviles, sino también en aplicaciones de alto rendimiento donde se requiere maximizar el desempeño sin elevar significativamente el consumo de energía. Su enfoque en eficiencia por watt la convierte en una alternativa estratégica frente a arquitecturas tradicionales utilizadas en servidores y centros de datos.
+
+Además, el desarrollo de nuevos procesadores basados en ARM está cambiando la forma en que se diseñan infraestructuras modernas de cómputo, especialmente en entornos de cloud computing y supercomputación.
 
 ## ¿Qué es ARM?
 
@@ -110,6 +112,66 @@ E --> E1[Procesamiento masivo de informacion]
 F --> F1[Baja latencia en dispositivos cercanos]
 ```
 
+# ARM en Aplicaciones de Alto Rendimiento con Bajo Consumo
+
+## Introducción
+El crecimiento acelerado de la inteligencia artificial, la computación en la nube y el procesamiento masivo de datos ha incrementado la demanda de sistemas de alto rendimiento. Sin embargo, este aumento de capacidad computacional también implica un mayor consumo energético.
+
+En este contexto, la arquitectura ARM ha ganado relevancia no solo en dispositivos móviles, sino también en aplicaciones de alto rendimiento donde se requiere maximizar el desempeño sin elevar significativamente el consumo de energía. Su enfoque en eficiencia por watt la convierte en una alternativa estratégica frente a arquitecturas tradicionales.
+
+---
+
+## ¿Qué es ARM?
+ARM es una arquitectura de procesadores basada en el modelo **RISC (Reduced Instruction Set Computing)**, desarrollada por Arm Holdings.
+
+El modelo RISC utiliza instrucciones simples y optimizadas, lo que permite:
+
+- Mayor eficiencia energética  
+- Ejecución rápida de instrucciones  
+- Diseño escalable  
+- Alto rendimiento por watt  
+
+ARM no fabrica directamente los chips, sino que licencia su arquitectura a distintas compañías para que diseñen procesadores adaptados a diferentes necesidades, incluyendo servidores y sistemas de alto rendimiento.
+
+---
+
+## Procesadores ARM
+Los procesadores ARM se utilizan en una amplia variedad de dispositivos debido a su eficiencia energética y flexibilidad de diseño. Gracias a su arquitectura, permiten crear sistemas que consumen menos energía sin sacrificar rendimiento.
+
+Además, muchos procesadores ARM modernos integran varios componentes dentro de un mismo chip, lo que se conoce como **System on Chip (SoC)**, permitiendo mejorar el rendimiento general del sistema y reducir el consumo energético.
+
+![Procesadores](https://ite.unison.mx/wp-content/uploads/2020/11/ARM-x86.jpg)
+
+---
+
+## Arquitectura ARM orientada al alto rendimiento
+Aunque ARM es conocida por su bajo consumo en dispositivos móviles, en los últimos años ha evolucionado para competir en entornos de alto rendimiento.
+
+Algunas características clave incluyen:
+
+- Arquitectura multinúcleo escalable  
+- Soporte para virtualización  
+- Extensiones SIMD (NEON y SVE)  
+- Diseño optimizado para paralelismo  
+
+La extensión **SVE (Scalable Vector Extension)** permite procesar grandes volúmenes de datos en paralelo, lo cual es fundamental en aplicaciones científicas e inteligencia artificial.
+
+---
+
+## Arquitectura ARM PC
+
+### Diagrama de funcionamiento general de la arquitectura ARM
+
+```mermaid
+flowchart LR
+    A[Aplicaciones] --> B[Sistema Operativo]
+    B --> C[Gestión de Procesos]
+    C --> D[CPU ARM Multinúcleo]
+    D --> E[Extensiones SIMD]
+    D --> F[Controlador de Memoria]
+    F --> G[Memoria RAM]
+```
+
 ## Conclusión
 La arquitectura ARM ha evolucionado más allá del mercado móvil para posicionarse como una alternativa viable en aplicaciones de alto rendimiento. Su diseño basado en RISC, junto con extensiones vectoriales y arquitecturas multinúcleo, permite competir en servidores, centros de datos y supercomputación.
 
@@ -125,6 +187,10 @@ Amazon Web Services. (s. f.). AWS Graviton Processors. https://aws.amazon.com
 Wikipedia. (s. f.). Fugaku (supercomputer). https://es.wikipedia.org/wiki/Fugaku
 
 IONOS México. (s. f.). Arquitectura ARM. 
+
+Arm Ltd. (n.d.). ARM CPU Architecture. Arm | the Architecture for the Digital World. https://www.arm.com/architecture/cpu
+
+Emily. (2025, December 11). What is an ARM Processor? Benefits and Applications. Geniatech. https://www.geniatech.com/what-is-an-arm-processor-discover-its-benefits-and-applications/
 
 
 
